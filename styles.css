@@ -1,119 +1,142 @@
 * { /* General Layout */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body { /* Body Styling */
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
 /* Navigation Section */
 .nav-bar { /* Navigation Bar */
-    background-color: #c3f7c3;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+  background-color: #c3f7c3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 .nav-title { /* Navigation Title */
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #333;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
 }
 .nav-buttons { /* Navigation Buttons */
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 .nav-button { /* Navigation Button Stylings: Passive */
-    text-decoration: none;
-    color: #333;
-    background-color: #c3f7c3;
-    padding: 10px 20px;
-    border: 2px solid #c3f7c3;
-    border-radius: 5px;
-    font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  background-color: #c3f7c3;
+  padding: 10px 20px;
+  border: 2px solid #c3f7c3;
+  border-radius: 5px;
+  font-weight: bold;
 }
 .nav-button:hover { /* Navigation Button Stylings: Active */
-    background-color: #a3d6a3;
-    border-color: #a3d6a3;
+  background-color: #a3d6a3;
+  border-color: #a3d6a3;
 }
 
 /* Header Section */
 .header { /* Header Styling */
-    text-align: center;
-    padding: 20px;
-    background-color: #f9f9f9;
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
 }
 .header h1 { /* Header 1 Styling */
-    font-size: 2.5em;
-    color: gray;
+  font-size: 2.5em;
+  color: gray;
 }
 .header-line { /* Header Line */
-    border: none;
-    height: 2px;
-    background-color: black;
-    margin: 20px 0;
+  border: none;
+  height: 2px;
+  background-color: black;
+  margin: 20px 0;
 }
 
 /* Purpose Section */
 .purpose { /* Purpose Styling */
-    padding: 20px;
-    text-align: center;
+  padding: 20px;
+  text-align: center;
 }
 .purpose h2 { /* Purpose 1 Styling */
-    font-size: 2em;
-    color: gray;
-    margin-bottom: 10px;
+  font-size: 2em;
+  color: gray;
+  margin-bottom: 10px;
 }
 .purpose p { /* Purpose Paragraph Styling */
-    font-size: 1.2em;
-    max-width: 800px;
-    margin: 0 auto;
+  font-size: 1.2em;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 /* AI Work Section */
 .ai-work { /* AI Work Styling */
-    padding: 20px;
-    text-align: center;
+  padding: 20px;
+  text-align: center;
 }
 .ai-work h2 { /* AI Work Header 2 Styling */
-    font-size: 2em;
-    color: gray;
-    margin-bottom: 10px;
+  font-size: 2em;
+  color: gray;
+  margin-bottom: 10px;
 }
 .ai-placeholder { /* AI Work Placeholder*/
-    background-color: #ddd;
-    width: 80%;
-    max-width: 600px;
-    height: 300px;
-    margin: 0 auto;
-    border: 2px dashed #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2em;
-    color: #666;
+  background-color: #ddd;
+  width: 80%;
+  max-width: 600px;
+  height: 300px;
+  margin: 0 auto;
+  border: 2px dashed #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  color: #666;
 }
 
 /* Footer Section */
 .footer { /* Footer Styling */
-    background-color: #c3f7c3;
-    text-align: center;
-    padding: 10px 20px;
-    margin-top: 20px;
+  background-color: #c3f7c3;
+  text-align: center;
+  padding: 10px 20px;
+  margin-top: 20px;
 }
 .footer p { /* Footer Paragraph Styling */
-    margin: 5px 0;
+  margin: 5px 0;
 }
 .footer-link { /* Footer Link Styling */
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
 }
 .footer-link:hover { /* Footer Styling: Active */
-    color: #555;
+  color: #555;
+}
+
+/* Adjust the size of input and textarea fields */
+input[type="text"],
+input[type="email"] {
+  width: 100%; /* Sets the width to fill the form container */
+  max-width: 550px; /* Optional: Caps the maximum width */
+  height: 2.5rem; /* Increases the height of the text input fields */
+  padding: 0.5rem; /* Adds space inside the text box */
+  font-size: 1rem; /* Ensures the font size matches the design */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Adjust the size of the message box */
+textarea {
+  width: 100%; /* Ensures it stretches to fill the form container */
+  max-width: 550px; /* Optional: Caps the maximum width */
+  height: 225px; /* Sets the height of the textarea */
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
